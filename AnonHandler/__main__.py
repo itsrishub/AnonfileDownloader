@@ -7,9 +7,8 @@ from tempfile import NamedTemporaryFile as tf
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
     wlcm_msg = '''*Yo*, *Sup Fam*?
-This _bot_ is created for _fun_ and _testing_ purpose.
-But it does *work* _sometimes_.
-
+This Bot is created to download anonfile files without vpn
+on telegram itself.\n\n
 *How to use?*
 *>>* `/anon <your_link>`
 (*without <, > xD*) 
@@ -34,7 +33,7 @@ def anon_handling(message):
             link_parts = download_link.split('/')
             file_name = link_parts[len(link_parts)-1]
             # First notification to the user regarding the file
-            reply = f'{file_name} is under process...\n __*Please wait*__'
+            reply = f'{file_name} is under process...\nPlease wait...'
             temp_reply = bot.reply_to(message, text=reply, parse_mode='markdown')
             
             file_data = requests.get(download_link)
