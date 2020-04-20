@@ -22,9 +22,6 @@ def anon_handling(message):
         # Extracting link
         link = str(message.text).replace('/anon ', '')
         # Checking if link valid or not & Correcting it if not
-        if link.find('https://') == -1 or \
-            link.find('http://') == -1:
-            link = 'https://' + link
         # Extracting filename and downloading it
         req = requests.get(link)
         if req.status_code == 200:
