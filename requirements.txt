@@ -1,0 +1,2 @@
+pyTelegramBotAPI
+-r requirements-startup.txt

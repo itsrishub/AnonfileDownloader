@@ -1,0 +1,40 @@
+{
+  "name": "Anon Handler for TG",
+  "description": "Bot by Dwayne BlaZE",
+  "logo": "https://anonfile.com/static/logo.png",
+  "keywords": [
+    "telegram",
+    "userbot",
+    "anon",
+    "anonfile",
+    "productivity"
+  ],
+  "repository": "Git repository daal de",
+  "website": "#TODO",
+  "success_url": "#TODO",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable heroku.",
+      "value": "ANYTHING"
+    },
+    "BOT_TOKEN": {
+		"description": "Bot Token from BotFather",
+		"value": ""
+	}
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "9.5"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url":"https://github.com/amivin/aria2-heroku.git"
+  },{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "heroku/python"
+  }]
+}
