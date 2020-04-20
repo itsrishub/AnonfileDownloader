@@ -19,7 +19,7 @@ But it does *work* _sometimes_.
 @bot.message_handler(commands=['anon'])
 def anon_handling(message):
     text = message.text
-    if text.find('https://anonfile.com/') != -1:
+    if text.find('anonfile.com/') != -1:
         # Extracting link
         link = str(message.text).replace('/anon ', '')
         # Extracting filename and downloading it
