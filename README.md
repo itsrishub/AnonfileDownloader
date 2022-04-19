@@ -8,4 +8,3 @@
 - Bot Token must be set in heroku env variables
 
 
-## FeelTheBuRN
